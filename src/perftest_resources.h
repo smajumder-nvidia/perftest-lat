@@ -51,6 +51,7 @@
 #ifndef PERFTEST_RESOURCES_H
 #define PERFTEST_RESOURCES_H
 
+#include <linux/types.h>
 #include <infiniband/verbs.h>
 #include <rdma/rdma_cma.h>
 #include <stdint.h>

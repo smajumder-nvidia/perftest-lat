@@ -39,6 +39,7 @@
 #ifndef PERFTEST_COMMUNICATION_H
 #define PERFTEST_COMMUNICATION_H
 
+#include <linux/types.h>
 #include <netinet/in.h>
 #include <infiniband/verbs.h>
 #include <rdma/rdma_cma.h>
