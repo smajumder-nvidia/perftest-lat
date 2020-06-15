@@ -4895,7 +4895,10 @@ int run_iter_lat_send(struct pingpong_context *ctx,struct perftest_parameters *u
 						return 1;
 				}
 				poll = 0;
-
+				
+				if (user_param->test_type == ITERATIONS)
+				  user_param->tposted[scnt] = get_cycles();
+				
 				#ifdef HAVE_VERBS_EXP
 				if (user_param->use_exp == 1)
 					ctx->exp_wr[0].exp_send_flags &= ~IBV_EXP_SEND_SIGNALED;
